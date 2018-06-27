@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="format-detection" content="telephone=no"/>
+    <script src="../../js/public.js"></script>
+    <title>团转到家</title>
+
+    <!--公共css-->
+    <link rel="stylesheet" href="../../css/common.css">
+
+    <!--self css-->
+    <link rel="stylesheet" href="../../css/intelligent.css">
+</head>
+
+<body>
+<header>
+    <div class="nav-bar">
+        <span class="link pull-left">
+          <i class="icon arrow2"></i>
+        </span>
+
+        <div class="title">网关登陆</div>
+
+        <a href="#" class="link pull-right green">
+            搜素网关
+        </a>
+    </div>
+</header>
+
+<section class="page-group">
+    <h2 class="h2">请先登录网关</h2>
+
+    <form action="">
+        <ul class="cell-list">
+            <li class="item p27 cell">
+                <label class="w90">网关</label>
+                <input class="input" type="text" placeholder="请输入网管账号">
+                <i class="icon ew align-self"></i>
+            </li>
+            <li class="item p27 cell">
+                <label class="w90">密码</label>
+                <input class="input" type="text" placeholder="请输入网管密码">
+            </li>
+        </ul>
+
+        <!--说明
+            禁止点击状态；disabled
+        -->
+        <div class="btn-box">
+            <button type="submit" class="btn btn-orange mt60" @click="submit">进入</button>
+        </div>
+    </form>
+</section>
+</body>
+</html>
